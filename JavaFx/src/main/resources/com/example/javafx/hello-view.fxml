@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="600.0" style="-fx-background-color: #f2e8c9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
+    <children>
+        <AnchorPane layoutX="4.8" layoutY="57.0" prefHeight="334.0" prefWidth="590.0" style="-fx-background-color: #8e402a;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="57.0">
+            <children>
+                <SplitPane dividerPositions="0.5" layoutX="14.0" layoutY="9.0" prefHeight="315.0" prefWidth="562.0" AnchorPane.bottomAnchor="12.600000000000023" AnchorPane.leftAnchor="13.600000000000136" AnchorPane.rightAnchor="14.000000000000114" AnchorPane.topAnchor="8.800000000000011">
+                    <items>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #80461b;">
+                            <children>
+                                <VBox fx:id="stateVbox" layoutX="44.0" layoutY="134.0" prefHeight="288.0" prefWidth="183.0">
+                                    <children>
+                                        <Button fx:id="coffeeButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #FFFFFF;" text="Добавить Кофе" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="iseCreamButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #FFFFFF;" text="Добавить Мороженное" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+
+                                        <Button fx:id="surgeButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #FFFFFF;" text="Добавить Сахар" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="milkButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Добавить Молоко" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="teaButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Добавить Чай" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="waterButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Добавить Воду" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="creamButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Добавить Сливки" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="endButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Завершить" textAlignment="CENTER" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="serviceButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Сервис" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                        <Button fx:id="waitingButton" mnemonicParsing="false" prefHeight="12.0" prefWidth="183.0" style="-fx-background-color: #5b3a29; -fx-border-color: #ffffff;" text="Следующий" textFill="WHITE">
+                                            <font>
+                                                <Font name="Times New Roman Bold Italic" size="14.0" />
+                                            </font>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                                <ImageView fx:id="currentImg" fitHeight="122.0" fitWidth="115.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@image/machine.jpg" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="coffeeBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="coffeeImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/coffee.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="iseCreamBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="iseCreamImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/iseCream.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="surgeBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="surgeImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/surge.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="teaBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="teaImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/tea.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="milkBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="milkImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/milk.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="waterBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="waterImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/water.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                    <children>
+                                        <ProgressBar fx:id="creamBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" progress="0.0" HBox.hgrow="ALWAYS">
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ProgressBar>
+                                        <ImageView fx:id="creamImg" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@image/cream.jpg" />
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                            </padding>
+                        </VBox>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="8.8" prefHeight="43.0" prefWidth="584.0" style="-fx-background-color: #5b3a29;" text="Автомат с горячими напитками" textAlignment="CENTER" textFill="#f7f1f1" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="9.0">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
